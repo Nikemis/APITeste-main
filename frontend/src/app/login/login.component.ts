@@ -18,8 +18,4 @@ export class LoginComponent {
             this.router.navigate(['/tarefas']);
         });
     }
-
-    logout() {
-        localStorage.removeItem('token');
-    }
 }
