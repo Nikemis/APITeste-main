@@ -1,0 +1,9 @@
+<div>
+    <h2>{{ isEdit ? 'Edit User' : 'Create User' }}</h2>
+
+    <label>Nome: <input [(ngModel)]="user.nome" name="nome" required /></label><br />
+    <label>Senha: <input [(ngModel)]="user.senha" name="senha" required /></label><br />
+    <button (click)="CREATE_user();">
+        Save
+    </button>
+</div>

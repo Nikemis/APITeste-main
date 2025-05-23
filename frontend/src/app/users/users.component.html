@@ -1,0 +1,11 @@
+<div>
+    <h2>User List</h2>
+    <button routerLink="/users/create">Create New User</button>
+    <ul>
+        <li *ngFor="let user of users">
+            {{ user.nome }}
+            <button [routerLink]="['/users/edit', user._id]">Edit</button>
+            <button (click)="deleteUser(user._id!)">Delete</button>
+        </li>
+    </ul>
+</div>
